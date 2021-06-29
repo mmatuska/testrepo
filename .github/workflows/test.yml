@@ -6,6 +6,5 @@ jobs:
   Test:
     runs-on: [self-hosted, linux, x64, test1]
     steps:
-    - uses: actions/checkout@master
     - name: List
-      run: ls -l
+      run: sudo /root/chroot.sh ls -l
